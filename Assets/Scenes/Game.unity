@@ -687,6 +687,7 @@ GameObject:
   - component: {fileID: 837197224}
   - component: {fileID: 837197223}
   - component: {fileID: 837197222}
+  - component: {fileID: 837197226}
   m_Layer: 6
   m_Name: RearPanel
   m_TagString: Rear Panel
@@ -772,6 +773,20 @@ Transform:
   m_Father: {fileID: 734835022}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &837197226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837197221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7365a72af28dece4ba97679e59994cee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initEvent: {fileID: 11400000, guid: ab148fd4bb7ded948bd857f83e7b6e79, type: 2}
+  _config: {fileID: 11400000, guid: d4feb64487f84c64a97941cfbd61b2a7, type: 2}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,6 +1337,7 @@ GameObject:
   - component: {fileID: 1332597512}
   - component: {fileID: 1332597511}
   - component: {fileID: 1332597513}
+  - component: {fileID: 1332597514}
   m_Layer: 7
   m_Name: Bat
   m_TagString: Bat
@@ -1447,6 +1463,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leftBound: -3
   _rightBound: 3
+--- !u!114 &1332597514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332597506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7365a72af28dece4ba97679e59994cee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initEvent: {fileID: 11400000, guid: d55afe26ab09a4d428e0eed4ea10ee8e, type: 2}
+  _config: {fileID: 11400000, guid: 2e91a0daa5109d1468f9f77423af6217, type: 2}
 --- !u!1 &1358753868
 GameObject:
   m_ObjectHideFlags: 0
