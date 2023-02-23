@@ -10,7 +10,8 @@ namespace Arkanoid3D
     {
         [SerializeField] private BallConfig _config;
         [SerializeField] private Transform _body;
-        [SerializeField] private ScoresPresenter _scoresPresenter;
+        [SerializeField] private GlobalEvent _onBatCollision;
+        [SerializeField] private GlobalEvent _onRearPanelCollision;
 
         private Rigidbody _rigidbody;
         private float _currentSpeed;
@@ -67,12 +68,12 @@ namespace Arkanoid3D
             ChangeMovementDirection(collision.contacts[0]);
 
             var collisionTag = collision.gameObject.tag;
-         
-            if (collisionTag == RearPanelTag) 
-                _scoresPresenter.UpdateMissesCount();
 
-            else if (collisionTag == BatTag)           
-                _scoresPresenter.UpdateReboundsCount();           
+            if (collisionTag == RearPanelTag)
+                _onRearPanelCollision.Publish();
+
+            else if (collisionTag == BatTag)
+                _onBatCollision.Publish();           
         }
 
         private void ChangeMovementDirection(ContactPoint contactPoint)
